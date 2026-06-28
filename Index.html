@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <base target="_top">
+
+  <?!= include('Styles'); ?>
+
+</head>
+
+
+<body>
+
+
+<div class="container">
+
+
+  <div class="title">
+
+    <span class="company">
+      Ajax
+    </span>
+
+    <span>
+      Engineering Calculator
+    </span>
+
+  </div>
+
+
+
+  <div class="card">
+
+
+    <h2>🚻 Sanitary Calculator</h2>
+
+
+    <label>
+      Workers
+    </label>
+
+
+    <input
+      class="input"
+      id="workers"
+      type="number"
+      placeholder="Enter workers"
+    >
+
+
+
+    <label>
+      Men %
+    </label>
+
+
+    <input
+      class="input"
+      id="men"
+      type="number"
+      value="70"
+    >
+
+
+
+    <label>
+      Women %
+    </label>
+
+
+    <input
+      class="input"
+      id="women"
+      type="number"
+      value="30"
+    >
+
+
+
+    <button
+      class="button"
+      onclick="calculate()"
+    >
+      Calculate
+    </button>
+
+
+  </div>
+
+
+
+
+  <div class="resultCard">
+
+
+    <h2>
+      Result
+    </h2>
+
+
+    <div id="result">
+
+      Waiting...
+
+    </div>
+
+
+  </div>
+
+
+
+</div>
+
+
+
+<?!= include('JavaScript'); ?>
+
+
+</body>
+
+</html>
