@@ -1,0 +1,75 @@
+<script>
+
+
+function calculate(){
+
+
+let workers =
+document.getElementById("workers").value;
+
+
+
+let men =
+document.getElementById("men").value;
+
+
+
+let women =
+document.getElementById("women").value;
+
+
+
+let menCount =
+workers * men / 100;
+
+
+
+let womenCount =
+workers * women / 100;
+
+
+
+let wcMen =
+Math.ceil(menCount / 25);
+
+
+
+let wcWomen =
+Math.ceil(womenCount / 15);
+
+
+
+let urinals =
+Math.ceil(menCount / 40);
+
+
+
+let washbasins =
+Math.ceil(workers / 20);
+
+
+
+
+document.getElementById("result").innerHTML =
+
+
+`
+
+<p>👨 Men WC: <b>${wcMen}</b></p>
+
+<p>👩 Women WC: <b>${wcWomen}</b></p>
+
+<p>🚻 Urinals: <b>${urinals}</b></p>
+
+<p>🚰 Washbasins: <b>${washbasins}</b></p>
+
+
+`;
+
+
+
+}
+
+
+
+</script>
